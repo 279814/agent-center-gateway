@@ -15,3 +15,5 @@ spring:
       - nacos:shared-logs.yaml # 共享日志配置
 logging:
     com.agent: debug
+jwt:
+  public-key: "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCiCJNC8S4VB3Ic4SfAOtOw2EngIEqz0kuRj3YfLwybISJICvWAcRAXKr+ZJv8ch4KROORbMkEgef316Yf8sMIDbpmE2VFMrd8ovsoL32cr6cKOAs+ic8KeTNnaIhu5Sq8r9DGyLDN0bOSlNATgLDIlVbeS3XjN0km9ZR2kI+c3TQIDAQAB"
