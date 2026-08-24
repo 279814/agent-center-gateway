@@ -7,3 +7,12 @@ spring:
     active: local
   application:
     name: agent-center-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: acs
+          uri: lb://agent-center # 负载均衡路由到agent-center服务
+          predicates:
+            - Path=/acs/**
+      default-filters:
+        - StripPrefix=1 # 转发请求时去掉/acs前缀
